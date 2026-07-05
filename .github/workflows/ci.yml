@@ -66,6 +66,6 @@ jobs:
           # Commit and push the changes
           git config user.name "GitHub Actions Bot"
           git config user.email "actions@github.com"
-          git add k8s-manifests/backend.yaml
-          git commit -m "chore(backend): update image to ${NEW_TAG}"
+          git add k8s-manifests/worker.yaml
+          git commit -m "chore(Worker): update image to ${NEW_TAG}"
           git push origin main
