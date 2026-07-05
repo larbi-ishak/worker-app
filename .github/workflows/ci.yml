@@ -61,7 +61,7 @@ jobs:
 
           # Use sed to replace the image tag in the specific manifest.
           # Example for the backend-api:
-          sed -i "s|image: docker.io/larbizyoisco/worker-app:.*|image: docker.io/larbizyoisco/worker-app:${NEW_TAG}|g" k8s-manifests/worker-app.yaml
+          sed -i "s|image: docker.io/larbizyoisco/worker-app:.*|image: docker.io/larbizyoisco/worker-app:${NEW_TAG}|g" k8s-manifests/worker.yaml
 
           # Commit and push the changes
           git config user.name "GitHub Actions Bot"
